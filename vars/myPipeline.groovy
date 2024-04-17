@@ -29,7 +29,7 @@ def call() {
             stage('Docker Build Images') {
                 steps {
                     script {
-                        sh 'docker build -t nirmal321/multi:v1 .'
+                        sh 'sudo docker build -t nirmal321/multi:v1 .'
                         sh 'docker images'
                         sh 'docker ps'
                     }
